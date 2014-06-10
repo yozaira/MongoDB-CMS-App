@@ -1,0 +1,100 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font: 0.9em Tahoma, Verdana, Arial;
+	/* line-height:172%; */
+	background: #ddd;
+    margin-top: 100px;  /* 100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav */
+}
+
+
+#nav {
+/* width:960px; */
+height:0px;
+border-bottom:1px solid #ccc;
+}
+
+h4{
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+}
+
+ul li{
+	display: inline-block;
+	padding: 15px;
+	list-style: none;
+}
+
+/* Css for Part2 */
+
+hr{
+	margin: 12px 0;
+	height: 1px;
+	border: 1px solid #fff;
+	border-top: 1px solid #ccc;
+	background-color: #fff;
+}
+
+#header {
+width:960px;
+height:135px;
+margin:0 auto;
+margin-bottom:25px;
+border-bottom:1px solid #ccc;
+border-top:1px solid #ccc;
+}
+
+#header h2 {
+padding:10px;
+}
+
+
+
+#nav a {
+display:inline;
+padding:10px;
+text-decoration:none;
+background-color:#f1f1f1;
+}
+
+#nav a:hover {
+background-color:#bababa;
+height:80px;
+}
+
+#section {
+width:675px;
+float:left;
+padding:10px;
+}
+
+#sidebar {
+width:200px;
+float:right;
+margin-bottom:25px;
+}
+
+#sidebar a {
+text-decoration:none;
+}
+
+#sidebar li {
+list-style:none;
+}
+
+footer {
+clear:both;
+width:960px;
+height:35px;
+/* border-top:1px solid #ccc; */
+}
+
+#footer p {
+padding:10px;
+}
+

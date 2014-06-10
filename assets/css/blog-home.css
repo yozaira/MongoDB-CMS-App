@@ -1,0 +1,25 @@
+body {
+	margin-top: 100px; /* 100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav */
+}
+
+
+hr{
+	margin: 12px 0;
+	height: 1px;
+	border: 1px solid #fff;
+	border-top: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.navbar{
+	/* margin-bottom: 120px; */
+}
+
+#container{
+	/* margin-top: 120px; */
+}
+
+footer {
+	margin: 50px 0;
+}
+
