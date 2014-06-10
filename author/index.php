@@ -2,7 +2,7 @@
 require_once('../core/init.php');
 
  if ($author->isLoggedIn()) {  
-	$page_title = $author->name;
+    $page_title = $author->name;
 }
 include_once ('../includes/header.inc.php');
 include_once ('author_nav_menu.php');   

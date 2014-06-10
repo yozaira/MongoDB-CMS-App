@@ -5,38 +5,32 @@ $mongo = DBConnection::instantiate();
 $db = $mongo->database;
 
 $result = $db->command(array('distinct' => 'articles', 'key' => 'category'));
-
 ?>
  <html>
-        <head>
-            <title>Categories</title> 
-            <link rel="stylesheet" href="style.css"/>
+<head>
+  <title>Categories</title> 
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div>
+      <h1>Distinct Categories</h1>
+      <ul>
+      <?php foreach($result['values'] as $value): ?>
+      <li><?php echo $value; ?></li>
+      <?php endforeach; ?>
+      </ul>
+    </div>
+  </div>
 
-        </head>
-        <body>
-            <div id="contentarea">
-                <div id="innercontentarea">
-                    <h1>Distinct Categories</h1>
-                    <ul>
-                    <?php foreach($result['values'] as $value): ?>
-                    <li><?php echo $value; ?></li>
-                    <?php endforeach; ?>
-                    </ul>
-                </div>
-            </div>
-
-        </body>
+</body>
  </html>
-	
-			<br/>
-		   <div id="contentarea">
-                <div id="innercontentarea">		
-		     </div>   
-	      </div>
-		  
-		         <?php
-				// echo '<pre>';
-				// print_r($result);
-			    ?>
-		  
-		  
+
+<br/>
+<div>   
+
+<?php
+// echo '<pre>';
+// print_r($result);
+?>
+      
+      
